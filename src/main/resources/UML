@@ -1,0 +1,118 @@
++--------------------------------------------+
+|                 StudentMenu                 |
++--------------------------------------------+
+| +runMenu()                                 |
+| +addStudent()                              |
+| +removeStudent()                           |
+| +searchStudentByGPA()                      |
+| +printAll()                                |
+| +searchBySSID()                            |
+| +searchByGPA()                             |
+| +findIndexOf(double)                       |
+| +main(String[])                            |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             StudentApplication              |
++--------------------------------------------+
+| +main(String[])                            |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|                 Student                    |
++--------------------------------------------+
+| -SSID: String                              |
+| -firstName: String                         |
+| -lastName: String                          |
+| -currentGPA: double                        |
++--------------------------------------------+
+| +Student(String, String, String, double)  |
+| +getSSID(): String                         |
+| +getFirstName(): String                    |
+| +getLastName(): String                     |
+| +getCurrentGPA(): double                   |
+| +displayStudentInfo()                      |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|                Server                      |
+|                Client                      |
+|           StudentRequest                   |
+|           StudentResponse                  |
++--------------------------------------------+
+| ... (methods and attributes)               |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|            StudentCollection                |
++--------------------------------------------+
+| -students: List<Student>                   |
++--------------------------------------------+
+| +addStudent(Student)                       |
+| +removeStudent(Student)                    |
+| +searchStudentByGPA(double)                |
+| +getAllStudents(): List<Student>            |
+| ... (other methods)                        |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|            StudentLinkedList                |
++--------------------------------------------+
+| -head: Node                                |
++--------------------------------------------+
+| +insert(Student)                           |
+| +remove(Student)                           |
+| +searchByGPA(double): Student              |
+| +getAllStudents(): List<Student>            |
+| ... (other methods)                        |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             InsertStudents                  |
+|             ReadStudents                    |
+|             StudentEntity                   |
+|             StudentRepository               |
++--------------------------------------------+
+| ... (methods and attributes)               |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             Enroll                          |
+|             Farewell                        |
+|             Highschool                      |
+|             OutOfStockException             |
+|             StudentConcurrency              |
++--------------------------------------------+
+| ... (methods and attributes)               |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             StreamAPI                       |
+|             SuicideRates                    |
++--------------------------------------------+
+| ... (methods and attributes)               |
++--------------------------------------------+
