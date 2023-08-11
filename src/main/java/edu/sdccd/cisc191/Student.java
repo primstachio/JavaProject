@@ -11,7 +11,6 @@ package edu.sdccd.cisc191;
  *                     to display their information using same method call
  */
 public class Student {
-    // Attributes of the Student class
     private String SSID;
     private String firstName;
     private String lastName;
