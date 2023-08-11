@@ -1,14 +1,14 @@
 package edu.sdccd.cisc191;
 /**
- * (10)
+ * (MODULE 10) Lambdas and StreamAPI
+ * Convert a for loop over an array into Stream API using lambdas to filter or map.
  * Although not pertaining to strictly students, this applies to death rates by country.
- * Easy and available .csv file as these files are not the easiest to find.
+ * Quickly available .csv file as these files are not the easiest to find.
  */
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvDate;
 import java.sql.Date;
 import java.text.DecimalFormat;
-
 public class SuicideRates {
     @CsvDate(value = "yyyy")
     @CsvBindByName(column = "YEAR")
@@ -22,10 +22,6 @@ public class SuicideRates {
         DecimalFormat decimalFormat = new DecimalFormat("#.#########");
         return String.format("SuicideRates[date=%s, country=%s, rate=%s]", year, country, decimalFormat.format(rate));
     }
-    public Date getDate() { return year; }
-    public void setDate(Date year) { this.year = year; }
     public String getCountry() { return country; }
-    public void setCountry(String country) { this.country = country; }
     public double getRate() { return rate; }
-    public void setRate(double rate) { this.rate = rate; }
 }

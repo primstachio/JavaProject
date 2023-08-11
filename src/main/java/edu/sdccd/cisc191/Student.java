@@ -1,6 +1,14 @@
 package edu.sdccd.cisc191;
 /**
- * (3) OOP
+ * (MODULE 3) Object-Oriented Programming
+ * Models real-world entities (students) as objects
+ *      and incorporates the fundamental concepts of OOP:
+ *      encapsulation - private fields encapsulated within the class
+ *                      with access controlled through getter/setter methods
+ *      inheritance - base class for more specialized classes (HighSchool/CollegeStudent),
+ *                    inheriting common properties and behaviors
+ *      polymorphism - displayStudentInfo() method allows different types of Student objects
+ *                     to display their information using same method call
  */
 public class Student {
     // Attributes of the Student class

@@ -1,7 +1,9 @@
 package edu.sdccd.cisc191;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * (MODULE 8) Databases
+ */
 class StudentEntityTest {
     @Test
     void createStudentEntity() {
@@ -12,4 +14,3 @@ class StudentEntityTest {
         assertEquals(4.0, studentEntity.getCurrentGPA());
     }
 }
-// Add tests for read and insert classes

@@ -1,7 +1,9 @@
 package edu.sdccd.cisc191;
 import java.util.Scanner;
 /**
- * (1) 2D Array
+ * (MODULE 1) Interactive Console and 2D Array
+ * Prints an interactive console menu that performs actions on a 2D array:
+ *      addStudent, removeStudent, printAll, searchBySSID, searchByGPA
  */
 public class StudentMenu {
     private static final int MAX_STUDENTS = 1000;
@@ -119,10 +121,6 @@ public class StudentMenu {
         }
     }
     public int getStudentCount() { return studentCount; }
-
-    //private StudentCollection studentCollection = new StudentCollection(); // 5
-    //private StudentLinkedList studentLinkedList = new StudentLinkedList(); // 6
-
 
     public static void main(String[] args) {
         StudentMenu studentMenu = new StudentMenu();

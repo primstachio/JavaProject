@@ -6,7 +6,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 /**
- * (2) JavaFX
+ * (MODULE 2) JavaFX GUI
+ * A JavaFX GUI version of the interactive console menu demonstrated in StudentMenu.
  */
 public class StudentApplication extends Application {
     private StudentMenu studentMenu = new StudentMenu();

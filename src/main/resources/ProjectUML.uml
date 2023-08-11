@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/hoe/IdeaProjects/JavaProject/src/main/java/edu/sdccd/cisc191</OriginalElement>
+  <nodes>
+    <node x="731.0" y="1183.0">edu.sdccd.cisc191.Farewell</node>
+    <node x="-105.0" y="594.0">edu.sdccd.cisc191.StudentApplication</node>
+    <node x="-44.099999999999994" y="-14.0">edu.sdccd.cisc191.Student</node>
+    <node x="102.5" y="334.5">edu.sdccd.cisc191.StudentCollection</node>
+    <node x="318.0" y="909.0">edu.sdccd.cisc191.Client</node>
+    <node x="378.5" y="323.5">edu.sdccd.cisc191.StudentLinkedList</node>
+    <node x="-105.0" y="1040.0">edu.sdccd.cisc191.InsertStudents</node>
+    <node x="718.5" y="246.0">edu.sdccd.cisc191.Server</node>
+    <node x="765.5" y="-14.0">edu.sdccd.cisc191.StudentResponse</node>
+    <node x="316.0" y="1183.0">edu.sdccd.cisc191.ReadStudents</node>
+    <node x="638.0" y="840.0">edu.sdccd.cisc191.Enroll</node>
+    <node x="-105.0" y="1348.0">edu.sdccd.cisc191.StudentRepository</node>
+    <node x="651.5" y="737.0">edu.sdccd.cisc191.StudentConcurrency</node>
+    <node x="1024.0" y="1183.0">edu.sdccd.cisc191.OutOfStockException</node>
+    <node x="-74.5" y="737.0">edu.sdccd.cisc191.StudentEntity</node>
+    <node x="915.0" y="737.0">edu.sdccd.cisc191.SuicideRates</node>
+    <node x="-105.0" y="1183.0">edu.sdccd.cisc191.StreamAPI</node>
+    <node x="367.5" y="737.0">edu.sdccd.cisc191.StudentRequest</node>
+    <node x="-99.5" y="290.0">edu.sdccd.cisc191.StudentMenu</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.sdccd.cisc191.StudentCollection" target="edu.sdccd.cisc191.Student" relationship="TO_MANY">
+      <point x="0.0" y="-82.5" />
+      <point x="230.5" y="292.0" />
+      <point x="105.5" y="292.0" />
+      <point x="8.099999999999994" y="127.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.StudentMenu" target="edu.sdccd.cisc191.Student" relationship="CREATE">
+      <point x="-15.0" y="-127.0" />
+      <point x="-120.9" y="127.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.StudentApplication" target="edu.sdccd.cisc191.StudentMenu" relationship="TO_ONE">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.Enroll" target="edu.sdccd.cisc191.StudentConcurrency" relationship="CREATE">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.StudentLinkedList" target="edu.sdccd.cisc191.Student" relationship="TO_MANY">
+      <point x="0.0" y="-93.5" />
+      <point x="526.0" y="292.0" />
+      <point x="105.5" y="292.0" />
+      <point x="8.099999999999994" y="127.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.StudentMenu" target="edu.sdccd.cisc191.Student" relationship="TO_MANY">
+      <point x="0.0" y="-127.0" />
+      <point x="-8.5" y="272.5" />
+      <point x="105.5" y="272.5" />
+      <point x="8.099999999999994" y="127.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.InsertStudents" target="edu.sdccd.cisc191.StudentEntity" relationship="CREATE">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.Client" target="edu.sdccd.cisc191.StudentRequest" relationship="CREATE">
+      <point x="0.0" y="-82.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.Server" target="edu.sdccd.cisc191.StudentResponse" relationship="CREATE">
+      <point x="0.0" y="-71.0" />
+      <point x="0.0" y="105.0" />
+    </edge>
+    <edge source="edu.sdccd.cisc191.StudentApplication" target="edu.sdccd.cisc191.StudentMenu" relationship="CREATE">
+      <point x="15.0" y="-49.0" />
+      <point x="15.0" y="127.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5397163120567375" showDependencies="true" x="398.2312746386335" y="691.9697766097241" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

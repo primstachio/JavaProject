@@ -1,10 +1,11 @@
 package edu.sdccd.cisc191;
 import java.util.ArrayList;
-import java.util.LinkedList;
 /**
- * (9)
+ * (MODULE 9) Concurrency
+ * A HighSchool enrolls and farewells students.
+ * Adapted from Tasha Frankie and Allan Schougaard's Warehouse module.
  */
-public class Highschool {
+public class HighSchool {
     private ArrayList<StudentConcurrency> school = new ArrayList<StudentConcurrency>();
     public synchronized int getNumberOfStudentsEnrolled()
     {

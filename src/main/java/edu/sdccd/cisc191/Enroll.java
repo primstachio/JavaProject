@@ -1,15 +1,17 @@
 package edu.sdccd.cisc191;
 /**
- * (9)
+ * (MODULE 9) Concurrency
+ * Enroll(er)s enroll students into a HighSchool.
+ * Adapted from Tasha Frankie and Allan Schougaard's Warehouse module.
  */
 public class Enroll extends Thread {
     private String SSID;
-    private Highschool highschool;
+    private HighSchool highschool;
     private int numberOfStudentsToEnroll;
-    public Enroll(String givenName, Highschool givenHighschool, int givenNumberOfStudentsToEnroll)
+    public Enroll(String givenName, HighSchool givenHighSchool, int givenNumberOfStudentsToEnroll)
     {
         SSID = givenName;
-        highschool = givenHighschool;
+        highschool = givenHighSchool;
         numberOfStudentsToEnroll = givenNumberOfStudentsToEnroll;
     }
     @Override

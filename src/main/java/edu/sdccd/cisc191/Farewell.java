@@ -1,14 +1,16 @@
 package edu.sdccd.cisc191;
 /**
- * (9) Farewell of students, whether they graduate or are expelled.
+ * (MODULE 9) Concurrency
+ * Farewell of students, whether they graduate or are expelled.
+ * Adapted from Tasha Frankie and Allan Schougaard's Warehouse module.
  */
 public class Farewell extends Thread {
     private String SSID;
-    private Highschool highschool;
+    private HighSchool highschool;
     private int numberOfStudentsLeaving;
-    public Farewell(String givenSSID, Highschool givenHighschool, int givenNumberOfStudentsLeaving) {
+    public Farewell(String givenSSID, HighSchool givenHighSchool, int givenNumberOfStudentsLeaving) {
         SSID = givenSSID;
-        highschool = givenHighschool;
+        highschool = givenHighSchool;
         numberOfStudentsLeaving = givenNumberOfStudentsLeaving;
     }
     @Override

@@ -2,7 +2,9 @@ package edu.sdccd.cisc191;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * (5)
+ * (MODULE 5) Generics and Collections
+ * List of students is a collection that uses generics to specify the Student elements it holds.
+ * Implemented methods utilize the collection to manage instances of Student class.
  */
 public class StudentCollection {
     private List<Student> students = new ArrayList<>();

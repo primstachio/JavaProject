@@ -1,7 +1,7 @@
 # JavaProject
 CISC191 Final Project
 
-User Story: As a high school principal, I want to search the database for a student by name, SSID, and/or GPA.
+User Story: As a high school principal or college chancellor, I want to search the database for a student by name, SSID, and/or GPA.
 
 Application features highlight the following learning objectives.
 

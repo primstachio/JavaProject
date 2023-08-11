@@ -5,9 +5,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-
 /**
- * (8)
+ * (MODULE 8) Databases
+ * Converting persistent serialized objects from disk to database by using Spring JPA annotations.
  */
 @SpringBootApplication
 public class ReadStudents {
@@ -25,9 +25,9 @@ public class ReadStudents {
             Iterable<StudentEntity> allStudentEntities = studentRepository.findAll();
             for (StudentEntity studentEntity: allStudentEntities)
             {
-                // Return custom representation including vehicle name in lieu of class name and object's hash code.
                 String lastName = studentEntity.getLastName();
-                log.info("STUDENT(S): " + lastName);
+                String SSID = studentEntity.getSSID();
+                log.info("STUDENT: " + lastName + "  (" + SSID + ")");
             }
         };
     }

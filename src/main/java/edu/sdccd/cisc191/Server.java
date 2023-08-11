@@ -2,11 +2,8 @@ package edu.sdccd.cisc191;
 import java.io.*; // Exception, Input, Output
 import java.net.*; // ServerSocket, Socket
 /**
- * (4) I/O Streams
- * Server listens for incoming connections on specified port.
- * Accepts StudentRequest object from client.
- * Processes request by creating StudentResponse with fixed first and last name values.
- * Returns information back to client.
+ * (MODULE 4) I/O Streams
+ * Save objects from application in serialized format on disk and load them up on start.
  */
 public class Server
 {
@@ -14,15 +11,6 @@ public class Server
     private Socket clientSocket;
     private ObjectInputStream ois;
     private ObjectOutputStream oos;
-    /*
-    * Starts server and listens on the specified port.
-    * Creates server socket to listen on specified port.
-    * Accepts client connection.
-    * Creates object streams to send and receive objects over socket.
-    * Processes incoming requests in a loop.
-    * Checks if object is an instance of StudentRequest and casts object to StudentRequest.
-    * Loop breaks of incoming object is not of type StudentRequest.
-    */
     public void start(int port) throws IOException, ClassNotFoundException
     {
         serverSocket = new ServerSocket(port);
@@ -45,7 +33,6 @@ public class Server
             }
         }
     }
-    // Process VehicleRequest and generate VehicleResponse.
     private StudentResponse processRequest(StudentRequest request)
     {
         int SSID = request.getSSID();
@@ -53,7 +40,6 @@ public class Server
         String firstName = "John";
         return new StudentResponse(SSID, lastName, firstName);
     }
-    // Stops server and closes server-client connections.
     public void stop() throws IOException
     {
         ois.close();
@@ -61,7 +47,6 @@ public class Server
         clientSocket.close();
         serverSocket.close();
     }
-    // Entry point of server application and starts server on port 1111.
     public static void main(String[] args)
     {
         Server server = new Server();

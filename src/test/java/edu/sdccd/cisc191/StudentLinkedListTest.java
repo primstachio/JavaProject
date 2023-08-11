@@ -2,7 +2,10 @@ package edu.sdccd.cisc191;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-// (6)
+/**
+ * (MODULE 6) Linked Data Structures and Recursion
+ * (MODULE 7) Searching and Sorting
+ */
 class StudentLinkedListTest {
     private StudentLinkedList studentLinkedList;
     @BeforeEach
@@ -42,7 +45,6 @@ class StudentLinkedListTest {
         Student foundStudent = studentLinkedList.findStudentBySSID("456");
         assertNull(foundStudent);
     }
-    // (7) vv
     @Test
     void findStudentByLastName() {
         Student student1 = new Student("123", "John", "Doe", 3.8);

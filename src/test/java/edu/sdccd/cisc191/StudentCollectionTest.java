@@ -3,7 +3,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
-// (5)
+/**
+ * (MODULE 5) Generics and Collections
+ */
 class StudentCollectionTest {
     private StudentCollection studentCollection;
     @BeforeEach

@@ -4,8 +4,12 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 /**
- * (6)
- * (7)
+ * (MODULE 6) Linked Data Structures and Recursion
+ *            Linked list used to store students.
+ *            Recursion implemented through iterative process of traversing through linked list
+ *                  in the searching and sorting methods.
+ * (MODULE 7) Searching and Sorting
+ *            Methods for searching and sorting provided based on student attributes.
  */
 public class StudentLinkedList {
     private LinkedList<Student> students = new LinkedList<>();
@@ -23,7 +27,6 @@ public class StudentLinkedList {
         }
         return null;
     }
-    // (7)
     public Student findStudentByLastName(String lastName) {
         for (Student student : students) {
             if (student.getLastName().equalsIgnoreCase(lastName)) {
@@ -32,7 +35,6 @@ public class StudentLinkedList {
         }
         return null;
     }
-    // (7)
     public void sortByGPA() {
         Collections.sort(students, Comparator.comparingDouble(Student::getCurrentGPA).reversed());
     }

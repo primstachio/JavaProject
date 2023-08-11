@@ -3,14 +3,15 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 /**
- * (9)
+ * (MODULE 9) Concurrency
+ * Adapted from Tasha Frankie and Allan Schougaard's Warehouse module.
  */
 class TestThreading
 {
     @Test
     void testHighschool() throws OutOfStockException
     {
-        Highschool highschool = new Highschool();
+        HighSchool highschool = new HighSchool();
         StudentConcurrency s1 = new StudentConcurrency();
         assertEquals(0, highschool.getNumberOfStudentsEnrolled());
         highschool.receive(s1);
@@ -30,7 +31,7 @@ class TestThreading
     @Test
     void testProducingSequentially()
     {
-        Highschool school = new Highschool();
+        HighSchool school = new HighSchool();
         int numberOfEnrollers = 5;
         int numberOfStudentsPerEnroller = 5;
         Enroll[] enroll = new Enroll[numberOfEnrollers];
@@ -41,7 +42,7 @@ class TestThreading
     @Test
     void testConsumingConcurrently() throws InterruptedException
     {
-        Highschool school = new Highschool();
+        HighSchool school = new HighSchool();
         int numberOfConsumers = 5;
         int numberOfItemsPerConsumer = 5;
         int numberOfItemsToProduce = numberOfConsumers * numberOfItemsPerConsumer;
@@ -56,7 +57,7 @@ class TestThreading
     @Test
     void testProducingConsumingConcurrently() throws InterruptedException
     {
-        Highschool school = new Highschool();
+        HighSchool school = new HighSchool();
         int numberOfProducers = 10000;
         int numberOfItemsPerProducer = 10;
         Enroll[] producers = new Enroll[numberOfProducers];

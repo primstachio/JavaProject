@@ -1,6 +1,6 @@
 package edu.sdccd.cisc191;
 /**
- * (4) I/O Streams
+ * (MODULE 4) I/O Streams
  */
 public class StudentResponse {
     private int SSID;
@@ -16,10 +16,7 @@ public class StudentResponse {
     {
         return SSID;
     }
-    public void setSSID(int SSID)
-    {
-        this.SSID = SSID;
-    }
+    public void setSSID(int SSID) { this.SSID = SSID; }
     public String getLastName()
     {
         return lastName;
@@ -28,14 +25,7 @@ public class StudentResponse {
     {
         this.lastName = lastName;
     }
-    public String getFirstName()
-    {
-        return firstName;
-    }
-    public void setFirstName(String firstName)
-    {
-        this.firstName = firstName;
-    }
+    public String getFirstName() { return firstName; }
     @Override
     public String toString()
     {

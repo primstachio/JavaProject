@@ -4,8 +4,9 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.Collectors;
 /**
- * (10)
- * suicide-rates-by-country.csv
+ * (MODULE 10) Lambdas and StreamAPI
+ * Convert a for loop over an array into Stream API using lambdas to filter or map.
+ * Resource: suicide-rates-by-country.csv
  * https://github.com/liadkeller/Suicides-Data-Analysis-DSE200X/blob/master/suicide-rates-by-country.csv
  */
 public class StreamAPI {
