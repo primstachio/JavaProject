@@ -1,0 +1,237 @@
++--------------------------------------------+
+|                 StudentMenu                |
+|--------------------------------------------|
+| + runMenu(): void                          |
+| + addStudent(): void                       |
+| + removeStudent(): void                    |
+| + printAll(): void                         |
+| + searchBySSID(): void                     |
+| + searchByGPA(): void                      |
+| + findIndexOf(gpa: double): int            |
+| + getStudentCount(): int                   |
+| + main(args: String[]): void               |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             StudentApplication             |
+|--------------------------------------------|
+| + main(args: String[]): void               |
+|--------------------------------------------|
+| - studentMenu: StudentMenu                 |
++--------------------------------------------+
+| + start(primaryStage: Stage): void         |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|                 Student                    |
+|--------------------------------------------|
+| - SSID: String                             |
+| - firstName: String                        |
+| - lastName: String                         |
+| - currentGPA: double                       |
+|--------------------------------------------|
+| + Student(SSID: String, firstName: String, lastName: String, currentGPA: double)|
+| + getSSID(): String                        |
+| + getFirstName(): String                   |
+| + getLastName(): String                    |
+| + getCurrentGPA(): double                  |
+| + displayStudentInfo(): void               |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|                 Server                     |
+|--------------------------------------------|
+| - serverSocket: ServerSocket               |
+| - clientSocket: Socket                     |
+| - ois: ObjectInputStream                   |
+| - oos: ObjectOutputStream                  |
+|--------------------------------------------|
+| + start(port: int): void                   |
+| + processRequest(request: StudentRequest)  |
+| + stop(): void                             |
+| + main(args: String[]): void               |
++--------------------------------------------+
+|                 Client                     |
+|--------------------------------------------|
+| - socket: Socket                           |
+| - ois: ObjectInputStream                   |
+| - oos: ObjectOutputStream                  |
+|--------------------------------------------|
+| + connect(hostname: String, port: int): void|
+| + disconnect(): void                       |
+| + main(args: String[]): void               |
++--------------------------------------------+
+|            StudentRequest                  |
+|--------------------------------------------|
+| - SSID: int                                |
+| - firstName: String                        |
+| - lastName: String                         |
+|--------------------------------------------|
+| + StudentRequest(SSID: int)                |
+| + getSSID(): int                           |
+| + setSSID(SSID: int): void                 |
+| + toString(): String                       |
++--------------------------------------------+
+|            StudentResponse                 |
+|--------------------------------------------|
+| - SSID: int                                |
+| - lastName: String                         |
+| - firstName: String                        |
+|--------------------------------------------|
+| + StudentResponse(SSID: int, lastName: String, firstName: String)|
+| + getSSID(): int                           |
+| + setSSID(SSID: int): void                 |
+| + getLastName(): String                    |
+| + setLastName(lastName: String): void      |
+| + getFirstName(): String                   |
+| + setFirstName(firstName: String): void    |
+| + toString(): String                       |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|            StudentCollection               |
+|--------------------------------------------|
+| - students: List<Student>                  |
+|--------------------------------------------|
+| + addStudent(student: Student): void       |
+| + removeStudent(student: Student): void    |
+| + searchStudentByGPA(gpa: double): List<Student>|
+| + getAllStudents(): List<Student>          |
+| + findBySSID(ssid: String): Student        |
+| + findByGPA(gpa: double): List<Student>    |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|            StudentLinkedList               |
+|--------------------------------------------|
+| - head: Node                               |
+|--------------------------------------------|
+| + insert(student: Student): void           |
+| + remove(student: Student): void           |
+| + searchByGPA(gpa: double): Student        |
+| + getAllStudents(): List<Student>          |
+| + findStudentBySSID(ssid: String): Student |
+| + findStudentByLastName(lastName: String): Student |
+| + sortByGPA(): void                        |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             InsertStudents                 |
++--------------------------------------------+
+| - log: Logger                              |
+|--------------------------------------------|
+| + main(args: String[]): void               |
+| + insertDemo(studentRepository): CommandLineRunner|
++--------------------------------------------+
+|             ReadStudents                   |
++--------------------------------------------+
+| - log: Logger                              |
+|--------------------------------------------|
+| + main(args: String[]): void               |
+| + readDemo(studentRepository): CommandLineRunner|
++--------------------------------------------+
+|             StudentEntity                  |
+|--------------------------------------------|
+| - id: Long                                 |
+| - SSID: String                             |
+| - firstName: String                        |
+| - lastName: String                         |
+| - currentGPA: double                       |
+|--------------------------------------------|
+| + StudentEntity(SSID: String, firstName: String, lastName: String, currentGPA: double)|
+| + getId(): Long                            |
+| + getSSID(): String                        |
+| + getFirstName(): String                   |
+| + getLastName(): String                    |
+| + getCurrentGPA(): double                  |
++--------------------------------------------+
+|             StudentRepository              |
+|--------------------------------------------|
+| ... (JpaRepository methods)                |
+| + findBySSID(SSID: String): List<StudentEntity>|
+| + findByLastName(lastName: String): StudentEntity|
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             Enroll                         |
+|--------------------------------------------|
+| - SSID: String                             |
+| - highschool: Highschool                   |
+| - numberOfStudentsToEnroll: int            |
+|--------------------------------------------|
+| + Enroll(SSID: String, highschool: Highschool, numberOfStudentsToEnroll: int)|
+| + run(): void                              |
++--------------------------------------------+
+|             Farewell                       |
+|--------------------------------------------|
+| - SSID: String                             |
+| - highschool: Highschool                   |
+| - numberOfStudentsLeaving: int             |
+|--------------------------------------------|
+| + Farewell(SSID: String, highschool: Highschool, numberOfStudentsLeaving: int)|
+| + run(): void                              |
++--------------------------------------------+
+|             Highschool                     |
+|--------------------------------------------|
+| - school: ArrayList<StudentConcurrency>    |
+|--------------------------------------------|
+| + getNumberOfStudentsEnrolled(): int       |
+| + receive(studentConcurrency: StudentConcurrency): void|
+| + ship(): StudentConcurrency               |
++--------------------------------------------+
+|             OutOfStockException            |
++--------------------------------------------|
+| ...                                        |
++--------------------------------------------+
+|             StudentConcurrency             |
++--------------------------------------------+
+| ...                                        |
++--------------------------------------------+
+             ^
+             |
+             |
+             |
++--------------------------------------------+
+|             StreamAPI                      |
+|--------------------------------------------|
+| - ...                                      |
+|--------------------------------------------|
+| + main(args: String[]): void               |
+| + computeSuicideRateStream(stats: List<SuicideRates>): long|
+| + computeSuicideRateLoop(stats: List<SuicideRates>): long|
++--------------------------------------------+
+|             SuicideRates                   |
+|--------------------------------------------|
+| - year: Date                               |
+| - country: String                          |
+| - rate: double                             |
+|--------------------------------------------|
+| + getDate(): Date                          |
+| + setDate(year: Date): void                |
+| + getCountry(): String                     |
+| + setCountry(country: String): void        |
+| + getRate(): double                        |
+| + setRate(rate: double): void              |
+| + toString(): String                       |
++--------------------------------------------+
