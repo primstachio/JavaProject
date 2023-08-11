@@ -6,8 +6,8 @@ User Story: As a high school principal, I want to search the database for a stud
 Application features highlight the following learning objectives.
 
 Module 1: Interactive Console Menu (performs actions on a 2D array)    
-Module 2: JavaFX GUI (of the the interactive console menu)    
-Module 3: Object Oriented Programming    
+Module 2: JavaFX GUI (of the interactive console menu)    
+Module 3: Object-Oriented Programming    
 Module 4: I/O Streams    
 Module 5: Generics and Collections    
 Module 6: Linked Data Structures and Recursion    
